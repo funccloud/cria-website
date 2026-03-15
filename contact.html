@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cria</title>
+    <!-- Modern web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Cria Logo" style="height: 48px;">
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">&#9776;</button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="launch.html" class="nav-link">Launch</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content-section">
+        <div class="content-box">
+            <form id="contact-form" action="https://formsubmit.co/ajax/vanessa.romankiv@funccloud.com" method="POST">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required
+                        placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-control" required
+                        placeholder="Tell us about your project..."></textarea>
+                </div>
+
+                <div class="form-group" style="text-align: center; margin-top: var(--spacing-lg);">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+                
+                <div id="form-message" style="display: none; text-align: center; margin-top: var(--spacing-md); color: var(--color-primary-green); font-weight: bold; font-size: 1.1rem;"></div>
+            </form>
+
+            <script>
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var form = this;
+                    var messageDiv = document.getElementById('form-message');
+                    var submitBtn = form.querySelector('button[type="submit"]');
+
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    messageDiv.style.display = 'none';
+
+                    fetch(form.action, {
+                        method: form.method,
+                        body: new FormData(form),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }).then(response => {
+                        return response.json();
+                    }).then(data => {
+                        if (data.success === "true" || data.success === true) {
+                            form.reset();
+                            messageDiv.style.display = 'block';
+                            messageDiv.style.color = 'var(--color-primary-green)';
+                            messageDiv.textContent = 'Contact received successfully!';
+                        } else {
+                            messageDiv.style.display = 'block';
+                            messageDiv.style.color = 'red';
+                            messageDiv.textContent = data.message || 'Oops! There was a problem submitting your form.';
+                            console.error('FormSubmit error:', data);
+                        }
+                    }).catch(error => {
+                        messageDiv.style.display = 'block';
+                        messageDiv.style.color = 'red';
+                        messageDiv.textContent = 'Oops! There was a problem submitting your form.';
+                        console.error('Fetch error:', error);
+                    }).finally(() => {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Send Message';
+                    });
+                });
+            </script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-banner"></div>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col" style="grid-column: span 2;">
+                        <a href="index.html" class="logo"
+                            style="margin-bottom: var(--spacing-md); display: inline-block;">
+                            <img src="assets/logo.png" alt="Cria Logo" style="height: 48px;">
+                        </a>
+                        <p class="footer-description">Helping families discover meaningful activities for their children.</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="launch.html">Launch</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3>Legal</h3>
+                        <ul class="footer-links">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Cria. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
