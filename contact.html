@@ -47,7 +47,7 @@
     <!-- Main Content -->
     <main class="content-section">
         <div class="content-box">
-            <form id="contact-form" action="https://formsubmit.co/ajax/vanessa.romankiv@funccloud.com" method="POST">
+            <form id="contact-form" action="https://formsubmit.co/ajax/giovanna@discovercria.com" method="POST">
                 <div class="form-group">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
@@ -68,12 +68,14 @@
                 <div class="form-group" style="text-align: center; margin-top: var(--spacing-lg);">
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
-                
-                <div id="form-message" style="display: none; text-align: center; margin-top: var(--spacing-md); color: var(--color-primary-green); font-weight: bold; font-size: 1.1rem;"></div>
+
+                <div id="form-message"
+                    style="display: none; text-align: center; margin-top: var(--spacing-md); color: var(--color-primary-green); font-weight: bold; font-size: 1.1rem;">
+                </div>
             </form>
 
             <script>
-                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                document.getElementById('contact-form').addEventListener('submit', function (e) {
                     e.preventDefault();
                     var form = this;
                     var messageDiv = document.getElementById('form-message');
@@ -128,7 +130,8 @@
                             style="margin-bottom: var(--spacing-md); display: inline-block;">
                             <img src="assets/logo.png" alt="Cria Logo" style="height: 48px;">
                         </a>
-                        <p class="footer-description">Helping families discover meaningful activities for their children.</p>
+                        <p class="footer-description">Helping families discover meaningful activities for their
+                            children.</p>
                     </div>
 
                     <div class="footer-col">
