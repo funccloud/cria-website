@@ -4,128 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cria - Welcome to our Platform</title>
-    <!-- Modern web font -->
+    <title>Discover Cria | App</title>
+    <meta name="description"
+        content="The app that helps Miami families discover, book, and manage extracurricular activities for their kids — all in one place.">
+    <meta property="og:title" content="Discover Cria | App">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="The app that helps Miami families discover, book, and manage extracurricular activities for their kids — all in one place.">
+    <link rel="icon" href="assets/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="assets/apple-touch.png" sizes="180x180">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Outfit:wght@400;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:wght@400;600;700&family=Lilita+One&display=swap"
         rel="stylesheet">
-    <!-- Main styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- Header / Navigation -->
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Cria Logo" style="height: 48px;">
+            <a href="#home" class="logo">
+                <img src="assets/logo.png" alt="Cria">
             </a>
 
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">&#9776;</button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
 
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="launch.html" class="nav-link">Launch</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active">home</a></li>
+                    <li><a href="#problem" class="nav-link">the problem</a></li>
+                    <li><a href="#how" class="nav-link">how it works</a></li>
+                    <li><a href="#about" class="nav-link">about cria</a></li>
+                    <li><a href="#providers" class="nav-link">to providers</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-content">
-                <h1 class="hero-title">Discover the Best Activities for Your Kids<span class="text-primary"></span></h1>
-                <p class="hero-subtitle">Cria helps families discover, book, and manage extracurricular activities for
-                    their children in one simple app.</p>
-                <div class="hero-actions">
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
-                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        <section class="hero" id="home">
+            <img class="hero-plant hero-plant--left" src="assets/media/plant-left.png" alt="">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <img class="hero-mark" src="assets/media/logo-hero.png" alt="A village in your pocket">
+                    <p class="hero-subtitle">The app that helps Miami families discover, book, and manage extracurricular
+                        activities for their kids — all in one place.</p>
+                    <div class="store-row">
+                        <a class="store-btn" href="https://app.qr-codes.com/yPRrt" target="_blank" rel="noopener">
+                            <img src="assets/media/badge-appstore-alt.png" alt="">
+                            <span>
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </span>
+                        </a>
+                        <a class="store-btn" href="https://app.qr-codes.com/yPRrt" target="_blank" rel="noopener">
+                            <img src="assets/media/badge-play-alt.png" alt="">
+                            <span>
+                                <small>Get it on</small>
+                                <strong>Google Play</strong>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img class="hero-phone" src="assets/media/phone-hero.png" alt="Cria app on a phone">
+                </div>
+            </div>
+            <svg class="section-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="#f59570" d="M0,32 C180,80 360,0 540,32 C720,64 900,8 1080,40 C1260,72 1380,24 1440,40 L1440,80 L0,80 Z"></path>
+            </svg>
+        </section>
+
+        <section class="section section--coral" id="problem">
+            <div class="container split">
+                <div class="split-copy">
+                    <p class="eyebrow">the problem</p>
+                    <h2 class="display">Parenting is already a full-time job.</h2>
+                    <p>Finding the right swim class, the perfect art workshop, or figuring out if there's still a spot in
+                        that soccer camp — it's exhausting. You search everywhere. Ask in Facebook groups. Text other
+                        parents. And still end up uncertain.</p>
+                    <p class="script-line">There has to be a better way.</p>
+                </div>
+                <div class="split-media">
+                    <img class="blob blob--problem" src="assets/media/problem-illustration.png" alt="">
+                    <img class="photo photo--heart" src="assets/media/problem-photo.jpg"
+                        alt="A child celebrating with a soccer ball">
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="section features-section">
+        <section class="section section--coral-deep" id="how">
             <div class="container">
-                <h2 class="text-center" style="margin-bottom: var(--spacing-xl);">How Cria Works</h2>
-                <div class="grid">
-                    <div class="card">
-                        <div class="card-icon">🌱</div>
-                        <h3 class="card-title">Discover Activities</h3>
-                        <p>Explore curated extracurricular programs for children based on their interests, goals, and
-                            age.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">✨</div>
-                        <h3 class="card-title">Personalized Suggestions</h3>
-                        <p>Receive activity recommendations tailored to your child's personality and development.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">🤝</div>
-                        <h3 class="card-title">Book and Manage</h3>
-                        <p>Easily book activities and manage your family’s schedule in one place.</p>
-                    </div>
+                <h2 class="display text-center">Cria makes it simple.</h2>
+                <div class="steps">
+                    <article class="step">
+                        <img src="assets/media/icon-discover.png" alt="">
+                        <h3>1. discover</h3>
+                        <p>Tell us about your child (age, interests, neighborhood) and Cria shows you the best local
+                            activities, personalized just for them.</p>
+                    </article>
+                    <article class="step">
+                        <img src="assets/media/icon-book.png" alt="">
+                        <h3>2. book</h3>
+                        <p>Reserve a spot in seconds. No back-and-forth, no waiting for a reply. Just tap and done.</p>
+                    </article>
+                    <article class="step">
+                        <img src="assets/media/icon-manage.png" alt="">
+                        <h3>3. manage</h3>
+                        <p>One calendar for the whole family. Schedules, reminders, and everything in one place — for
+                            every kid.</p>
+                    </article>
                 </div>
-                
-                <div class="text-center" style="margin-top: calc(var(--spacing-xl) * 1.5); max-width: 800px; margin-inline: auto;">
-                    <h2 class="text-primary" style="margin-bottom: var(--spacing-md);">Simplifying How Families Find Activities</h2>
-                    <p style="font-size: 1.1rem; line-height: 1.8;">Cria helps parents discover and book extracurricular activities for their children in a simple and organized way — bringing trusted providers and families together in one place.</p>
+            </div>
+        </section>
+
+        <section class="section section--coral" id="about">
+            <div class="container split split--reverse">
+                <div class="split-media">
+                    <img class="blob blob--about" src="assets/media/about-illustration.png" alt="">
+                    <img class="photo photo--round" src="assets/media/about-photo.png"
+                        alt="A parent and child on a tennis court">
                 </div>
+                <div class="split-copy">
+                    <p class="eyebrow">about cria</p>
+                    <h2 class="display">It takes a village.</h2>
+                    <p>Cria was built by parents, for parents. We believe every child deserves access to enriching
+                        experiences — and every parent deserves a little less chaos. We connect Miami families with
+                        trusted local teachers, coaches, and activity providers. All in one place, finally.</p>
+                    <p class="mission">Our mission: make the village real.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--navy" id="providers">
+            <div class="container split">
+                <div class="split-copy">
+                    <p class="eyebrow eyebrow--light">for activity providers</p>
+                    <h2 class="display display--cream">Grow your business with Cria.</h2>
+                    <p>Reach more local families. Fill your spots. Get discovered.</p>
+                    <p>Cria puts your classes and services in front of parents who are actively looking for exactly what
+                        you offer. No monthly fees — we only succeed when you do.</p>
+
+                    <ul class="provider-perks">
+                        <li>
+                            <strong>Local reach</strong>
+                            <span>Connect directly with Miami families searching for activities like yours.</span>
+                        </li>
+                        <li>
+                            <strong>Content production</strong>
+                            <span>Selected providers receive professional media of their classes — produced by Cria, at
+                                no extra cost.</span>
+                        </li>
+                        <li>
+                            <strong>No monthly fee</strong>
+                            <span>Pay only a small transaction fee when a booking happens. Zero risk upfront.</span>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-accent" href="mailto:hello@discovercria.com">Join as a Provider</a>
+                </div>
+                <div class="split-media">
+                    <img class="blob blob--providers" src="assets/media/providers-deco.svg" alt="">
+                    <img class="photo photo--portrait" src="assets/media/providers-photo.png"
+                        alt="A parent and child playing basketball">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cta" id="download">
+            <img class="cta-deco" src="assets/media/cta-deco.svg" alt="">
+            <div class="container cta-grid">
+                <div class="cta-copy">
+                    <h2 class="display">Ready to join the village?</h2>
+                    <p>Download Cria and discover the best activities for your child in Miami.</p>
+                    <div class="store-row">
+                        <a class="store-btn store-btn--dark" href="https://app.qr-codes.com/yPRrt" target="_blank"
+                            rel="noopener">
+                            <img src="assets/media/badge-appstore-alt.png" alt="">
+                            <span>
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </span>
+                        </a>
+                        <a class="store-btn store-btn--dark" href="https://app.qr-codes.com/yPRrt" target="_blank"
+                            rel="noopener">
+                            <img src="assets/media/badge-play-alt.png" alt="">
+                            <span>
+                                <small>Get it on</small>
+                                <strong>Google Play</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <p class="cta-help">Questions before downloading? <a href="mailto:hello@discovercria.com">hello@discovercria.com</a></p>
+                </div>
+                <img class="cta-photo" src="assets/media/cta-photo-alt.png" alt="Kids jumping for a basketball">
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-banner"></div>
-        <div class="footer-content">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-col" style="grid-column: span 2;">
-                        <a href="index.html" class="logo"
-                            style="margin-bottom: var(--spacing-md); display: inline-block;">
-                            <img src="assets/logo.png" alt="Cria Logo" style="height: 48px;">
-                        </a>
-                        <p class="footer-description">Helping families discover meaningful activities for their children.</p>
-                    </div>
-
-                    <div class="footer-col">
-                        <h3>Quick Links</h3>
-                        <ul class="footer-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="launch.html">Launch</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h3>Legal</h3>
-                        <ul class="footer-links">
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Cria. All rights reserved.</p>
-                </div>
-            </div>
+        <div class="container footer-bar">
+            <p>&copy; 2026 Cria. All rights reserved.</p>
+            <p><a href="mailto:hello@discovercria.com">hello@discovercria.com</a></p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a>
+                <span aria-hidden="true"> · </span>
+                <a href="terms.html">Terms of Use</a>
+            </p>
         </div>
     </footer>
 
-    <!-- Main Scripts -->
     <script src="js/main.js"></script>
 </body>
 

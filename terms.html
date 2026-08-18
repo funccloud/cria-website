@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use - Cria</title>
-    <!-- Modern web font -->
+    <link rel="icon" href="assets/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="assets/apple-touch.png" sizes="180x180">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Main styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:wght@400;600;700&family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Header / Navigation -->
     <header class="header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Cria Logo" style="height: 48px;">
+                <img src="assets/logo.png" alt="Cria">
             </a>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">&#9776;</button>
-            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="launch.html" class="nav-link">Launch</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html#home" class="nav-link">home</a></li>
+                    <li><a href="index.html#problem" class="nav-link">the problem</a></li>
+                    <li><a href="index.html#how" class="nav-link">how it works</a></li>
+                    <li><a href="index.html#about" class="nav-link">about cria</a></li>
+                    <li><a href="index.html#providers" class="nav-link">to providers</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +40,7 @@
     <main class="content-section">
         <div class="content-box scrollable-content">
 
-            <p><strong>Last Revised: February, 2025</strong></p>
+            <p><strong>Last Revised: June, 2026</strong></p>
 
             <p style="margin-top: var(--spacing-md); font-size: 0.9rem; background: #f8f4ec; padding: var(--spacing-md); border-radius: var(--border-radius-sm); border-left: 4px solid var(--color-primary-green);">
                 BY DOWNLOADING THE CRIA APP (COLLECTIVELY, THE "APPS") OR BY ACCESSING, VIEWING, OR USING THE APPS, THE CRIA OR WEBSITE (THE "SITES") OR ANY TOOLS AND SERVICES PROVIDED IN CONNECTION WITH THE APPS OR THE SITES (COLLECTIVELY, THE APPS, THE SITES AND ALL RELATED TOOLS AND SERVICES ARE REFERRED TO AS THE "SERVICE"), YOU UNDERSTAND AND AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS CONTAINED IN THESE TERMS OF USE. IF YOU OBJECT TO ANYTHING IN THESE TERMS OF USE, OR OTHERWISE DO NOT UNDERSTAND OR AGREE TO BE BOUND BY THESE TERMS OF USE DO NOT USE THE SERVICE AND UNINSTALL THE APPS IMMEDIATELY.
@@ -110,7 +107,8 @@
             <p>"User Content" is defined as any information, content, messages, photos, and/or materials a User posts on or through the Service. Users, not CRIA, are solely responsible for the User Content they post, submit or transmit through the Service. You represent and warrant that you are the owner or licensee or otherwise have the right to post or submit such User Content, and you grant to CRIA an irrevocable, perpetual, non-exclusive, fully paid, worldwide, sublicensable license to use, copy, perform, display, reproduce, adapt, modify, prepare derivative works of, and distribute such User Content.</p>
 
             <h3 style="margin-top: var(--spacing-lg); color: var(--color-primary-green);">12. Payment, Taxes and Refunds</h3>
-            <p><strong>a.</strong> All payments made through the CRIA platform are processed by Stripe, Inc. ("Stripe") through its Stripe Connect service. By using CRIA, you agree to be bound by Stripe's Terms of Service and Privacy Policy. CRIA does not collect, hold, or store payment card information.</p>
+            <p><strong>a.</strong> All payments made through the CRIA platform are processed by Stripe, Inc. (“Stripe”). By using CRIA, you agree to be bound by Stripe’s Terms of Service and Privacy Policy, as updated from time to time. CRIA currently processes payments through Stripe and settles funds to Providers via the payout method agreed upon at onboarding (which may include ACH transfer, check, or other mutually agreed method). CRIA intends to implement Stripe Connect for automated payouts in the future, at which point Providers will be notified and invited to connect a Stripe account. CRIA does not collect, hold, or store payment card information. Stripe is the party responsible for securely processing payments, managing transfers, and ensuring compliance with applicable financial and anti-money laundering regulations. Notwithstanding the foregoing, users agree that all transactions initiated shall comply with FACTA and applicable AML (Anti-Money Laundering) laws.</p>
+            <p style="margin-top: var(--spacing-sm);">When a parent or guardian (“User”) books an activity, Stripe collects the payment on behalf of the activity provider (“Provider”). For Commission Plan bookings, upon settlement the payment is divided as follows: the Provider receives the net amount owed for the booking (after fees); CRIA receives its platform service fee, which covers the use of the platform, marketing, and customer support. Commission Plan Providers must provide valid payout details at onboarding to receive settlements. When CRIA implements Stripe Connect, Providers will be required to create and maintain a valid Stripe Connected Account at that time. By using the CRIA platform, you authorize CRIA and Stripe to process payments on your behalf, deduct applicable service fees, and transfer your net payouts via the agreed settlement method. CRIA is not responsible for any delays, holds, or rejections of payouts caused by incomplete verification, Stripe policies, or Provider account issues.</p>
             <p style="margin-top: var(--spacing-sm);"><strong>b. Taxes.</strong> Each Provider is solely responsible for determining, collecting, and remitting any sales, use, or other taxes required by law in connection with the services they offer. CRIA does not calculate, collect, or remit taxes on behalf of Providers.</p>
             <p style="margin-top: var(--spacing-sm);"><strong>c. Refunds and Cancellations.</strong> Refunds, credits, and cancellations are governed by the Provider's policies and the applicable Stripe rules. CRIA does not issue refunds directly and is not responsible for any disputes between Users and Providers.</p>
             <p style="margin-top: var(--spacing-sm);">CRIA expressly disclaims all responsibility for:</p>
@@ -193,49 +191,29 @@
                 <li style="margin-bottom: var(--spacing-sm);"><strong>Good-Faith Commitment.</strong> The Parent agrees not to encourage providers to conduct services outside of the platform for activities that originated through the platform.</li>
                 <li style="margin-bottom: var(--spacing-sm);"><strong>Violation.</strong> Violation of this provision may result in suspension or termination of the Parent's account and restriction of access to the platform.</li>
             </ol>
+            <p style="margin-top: var(--spacing-sm);"><strong>Discovery Plan Carve-Out.</strong> Notwithstanding the Non-Circumvention provisions in Section 25, if a Provider is listed on the Platform under the Discovery (Subscription) Plan, parents may be directed to that Provider’s own external booking system to complete a reservation. Such redirected bookings do not constitute a violation of Section 25, as the Provider’s listing arrangement with CRIA expressly contemplates external booking. CRIA is not a party to, and bears no responsibility for, any transaction completed on a Provider’s external platform.</p>
+
+            <h3 style="margin-top: var(--spacing-lg); color: var(--color-primary-green);">26. Provider Subscription (Discovery) Plan</h3>
+            <p><strong>a. Subscription Fee and Billing.</strong> Providers who elect the Discovery Plan are billed a flat monthly fee of $49.99 (“Subscription Fee”), which covers marketplace listing and access to the CRIA Class Community Hub. The Subscription Fee is billed monthly on a recurring basis beginning on the date the Provider’s listing goes live.</p>
+            <p style="margin-top: var(--spacing-sm);"><strong>b. Credit Card Requirement.</strong> A valid credit or debit card must be on file at the time of enrollment in the Discovery Plan. CRIA uses Stripe to store and charge payment credentials; CRIA itself does not store card numbers. By enrolling, the Provider authorizes CRIA to charge the Subscription Fee to the card on file each billing cycle without further action required.</p>
+            <p style="margin-top: var(--spacing-sm);"><strong>c. Expiration Notifications.</strong> CRIA will send an email notification to the Provider’s registered address: (i) at least 7 days before a scheduled renewal; and (ii) when Stripe notifies CRIA that the card on file is expiring within the current billing period. It is the Provider’s responsibility to maintain current payment information in their account settings.</p>
+            <p style="margin-top: var(--spacing-sm);"><strong>d. Account Deactivation for Non-Payment.</strong> If a scheduled charge fails and is not resolved within 7 days of the due date, the Provider’s listing will become inactive and will no longer be visible to parents on the platform. The Provider’s account and data will not be deleted. The listing will be automatically reactivated upon successful payment of the outstanding balance. CRIA reserves the right to terminate access entirely if payment remains outstanding for more than 30 days.</p>
+            <p style="margin-top: var(--spacing-sm);"><strong>e. No Refunds for Partial Months.</strong> The Subscription Fee is non-refundable. If a Provider cancels their subscription, the listing will remain active through the end of the current billing period and will not renew thereafter. No partial-month refunds will be issued.</p>
+            <p style="margin-top: var(--spacing-sm);"><strong>f. External Bookings.</strong> Discovery Plan Providers retain their own booking systems. CRIA is not a party to, and bears no responsibility for, any bookings, payments, disputes, refunds, or injuries arising from transactions completed on a Provider’s external platform. Parents redirected to a Provider’s external site are subject to that Provider’s own terms and privacy policy.</p>
 
         </div>
     </main>
 
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-banner"></div>
-        <div class="footer-content">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-col" style="grid-column: span 2;">
-                        <a href="index.html" class="logo"
-                            style="margin-bottom: var(--spacing-md); display: inline-block;">
-                            <img src="assets/logo.png" alt="Cria Logo"
-                                style="height: 48px;">
-                        </a>
-                        <p class="footer-description">Helping families discover meaningful activities for their children.</p>
-                    </div>
-
-                    <div class="footer-col">
-                        <h3>Quick Links</h3>
-                        <ul class="footer-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="launch.html">Launch</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h3>Legal</h3>
-                        <ul class="footer-links">
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Cria. All rights reserved.</p>
-                </div>
-            </div>
+        <div class="container footer-bar">
+            <p>&copy; 2026 Cria. All rights reserved.</p>
+            <p><a href="mailto:hello@discovercria.com">hello@discovercria.com</a></p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a>
+                <span aria-hidden="true"> · </span>
+                <a href="terms.html">Terms of Use</a>
+            </p>
         </div>
     </footer>
 
